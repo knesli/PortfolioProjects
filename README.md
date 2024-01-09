@@ -11,9 +11,11 @@ Pizza Sales Data: The dataset used for this analysis is the "pizza_sales.csv" fi
 - SQL Server
 - Power BI
 #### Data Cleaning/Preparation
-
 #### Exploratory Data Analysis
-
+Exploratory Data Analysis has been performed to explore the pizza sales data to answer key questions, such as:
+- What is the daily and monthly trend for total pizza orders?
+- How the pizza sales are distributed by pizza category and pizza size?
+- Which pizzas are at the top and bottom based on revenue, quantity sold, and total orders?
 #### Data Analysis
 
 #### Results/Findings
