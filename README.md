@@ -26,3 +26,7 @@ GROUP BY pizza_category
 ORDER BY Perct_of_Sales DESC;
 ```
 #### Results/Findings
+- Classic Pizza and Large Pizza have made the biggest contribution to pizza sales in terms of revenue.
+- The busiest days have been Thursday and Friday, while the busiest months have been July and January based on the total orders.
+- The Thai Chicken Pizza has been the pizza with the highest revenue.
+- The Brie Carre Pizza has been at the bottom among other pizzas based on revenue, quantity sold, and total orders.
