@@ -17,5 +17,12 @@ Exploratory Data Analysis has been performed to explore the pizza sales data to 
 - How the pizza sales are distributed by pizza category and pizza size?
 - Which pizzas are at the top and bottom based on revenue, quantity sold, and total orders?
 #### Data Analysis
-
+As an example, the following SQL query has been implemented to determine de distribution of pizza sales by pizza category: 
+```SQL
+SELECT pizza_category, SUM(total_price) as Total_Sales ,CAST(SUM(total_price) * 100 / 
+(SELECT SUM(total_price) FROM pizza_sales) as decimal (10,2)) as Perct_of_Sales 
+FROM pizza_sales
+GROUP BY pizza_category
+ORDER BY Perct_of_Sales DESC;
+```
 #### Results/Findings
