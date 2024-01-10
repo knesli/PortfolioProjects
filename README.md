@@ -55,9 +55,9 @@ COVID-19 Data: The dataset used for this analysis has been obtained from the "(h
 
 #### Exploratory Data Analysis
 Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
-- What is the daily and monthly trend for total pizza orders?
-- How the pizza sales are distributed by pizza category and pizza size?
-- Which pizzas are at the top and bottom based on revenue, quantity sold, and total orders?
+- How did the case numbers, number of people vaccinated, and case fatality rate progress over time worldwide and for the countries?
+- How were the numbers distributed by continents?
+- Which countries are at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
 As an example, the following SQL query has been implemented to determine the distribution of pizza sales by pizza category: 
 ```SQL
