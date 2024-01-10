@@ -11,7 +11,6 @@ This project aims to create a comprehensive Power BI dashboard for analyzing piz
 #### Data Sources
 Pizza Sales Data: The dataset used for this analysis is the "pizza_sales.csv" file, containing detailed information about the pizza sales.  
 #### Tools
-- Excel
 - SQL Server
 - Power BI
 #### Data Cleaning/Preparation
@@ -40,15 +39,22 @@ ORDER BY Perct_of_Sales DESC;
 
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
+
+#### SQL Query: [COVID19.sql](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.sql)
+#### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.pbix)
+
 #### Data Sources
-COVID-19 Data: The dataset used for this analysis is obtained from "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths and, vaccinations.  
+COVID-19 Data: The dataset used for this analysis is obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
 #### Tools
 - Excel
 - SQL Server
 - Power BI
 #### Data Cleaning/Preparation
+- Excel is employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
+- SQL queries are utilized to clean and preprocess the data. This involves filtering out irrelevant information, handling null values, and aggregating data to facilitate meaningful insights.
+
 #### Exploratory Data Analysis
-Exploratory Data Analysis has been performed to explore the pizza sales data to answer the key questions, such as:
+Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
 - What is the daily and monthly trend for total pizza orders?
 - How the pizza sales are distributed by pizza category and pizza size?
 - Which pizzas are at the top and bottom based on revenue, quantity sold, and total orders?
