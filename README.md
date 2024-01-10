@@ -44,14 +44,14 @@ The primary goal of this project is to create an interactive and informative Pow
 #### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.pbix)
 
 #### Data Sources
-COVID-19 Data: The dataset used for this analysis is obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
+COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
 #### Tools
 - Excel
 - SQL Server
 - Power BI
 #### Data Cleaning/Preparation
-- Excel is employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
-- SQL queries are utilized to clean and preprocess the data. This involves filtering out irrelevant information, handling null values, and aggregating data to facilitate meaningful insights.
+- Excel has been employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
+- SQL queries have been utilized to clean and preprocess the data. This involves filtering out irrelevant information, handling null values, and aggregating data to facilitate meaningful insights.
 
 #### Exploratory Data Analysis
 Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
