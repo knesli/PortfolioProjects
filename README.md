@@ -57,15 +57,26 @@ COVID-19 Data: The dataset used for this analysis has been obtained from the "(h
 Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
 - How did the case numbers, number of people vaccinated, and case fatality rate progress over time worldwide and for the countries?
 - How were the numbers distributed by continents?
-- Which countries are at the top based on case numbers, people vaccinated, and case fatality rate?
+- Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
 As an example, the following SQL query has been implemented to determine the distribution of pizza sales by pizza category: 
 ```SQL
-SELECT pizza_category, SUM(total_price) as Total_Sales ,CAST(SUM(total_price) * 100 / 
-(SELECT SUM(total_price) FROM pizza_sales) as decimal (10,2)) as Perct_of_Sales 
-FROM pizza_sales
-GROUP BY pizza_category
-ORDER BY Perct_of_Sales DESC;
+With Vacc(Location, Date, Population, PeopleVaccinated)
+AS
+(SELECT dea.location,dea.date, dea.population, 
+	CASE
+		WHEN vac.people_vaccinated is null THEN max(vac.people_vaccinated) OVER (PARTITION BY dea.location order by dea.date) ELSE vac.people_vaccinated
+	END
+		AS people_vaccinated
+FROM PortfolioProject..CovidDeaths dea
+JOIN PortfolioProject..CovidVaccinations vac
+ON dea.location = vac.location
+AND dea.date = vac.date
+WHERE dea.continent is not null
+)
+SELECT *, 100000 * PeopleVaccinated/Population as VaccinatedPer100k
+FROM Vacc
+ORDER BY Location, Date
 ```
 #### Results/Findings
 - Classic Pizza and Large Pizza have made the most significant contribution to pizza sales revenue.
