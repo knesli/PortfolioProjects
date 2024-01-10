@@ -39,9 +39,9 @@ ORDER BY Perct_of_Sales DESC;
 ## COVID-19 Analysis
 
 #### Project Overview
-
+The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 #### Data Sources
-Pizza Sales Data: The dataset used for this analysis is the "pizza_sales.csv" file, containing detailed information about the pizza sales.  
+COVID-19 Data: The dataset used for this analysis is obtained from "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths and, vaccinations.  
 #### Tools
 - Excel
 - SQL Server
