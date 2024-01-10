@@ -40,7 +40,7 @@ ORDER BY Perct_of_Sales DESC;
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### SQL Query: [COVID19.sql](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.sql)
+#### SQL Query: [COVID19.sql](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.sql)
 #### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.pbix)
 
 #### Data Sources
