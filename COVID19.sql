@@ -58,7 +58,7 @@ order by date
 
 
 --People Vaccinated per 100,000 Population
-With VaccRate(Location, Date, Population, PeopleVaccinated)
+WITH Vacc(Location, Date, Population, PeopleVaccinated)
 as
 (SELECT dea.location,dea.date, dea.population, 
 	CASE
@@ -72,7 +72,7 @@ JOIN PortfolioProject..CovidVaccinations vac
 where dea.continent is not null
 )
 SELECT *, 100000 * PeopleVaccinated/Population as VaccinatedPer100k
-FROM VaccRate
+FROM Vacc
 ORDER BY Location, Date
 
 
