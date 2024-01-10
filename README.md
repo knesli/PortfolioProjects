@@ -79,8 +79,8 @@ FROM Vacc
 ORDER BY Location, Date
 ```
 #### Results/Findings
-- Classic Pizza and Large Pizza have made the most significant contribution to pizza sales revenue.
-- The busiest days have been Thursday and Friday, while the busiest months have been July and January based on the total orders.
-- The Thai Chicken Pizza has been the pizza with the highest revenue.
-- The Brie Carre Pizza has been at the bottom among other pizzas based on revenue, quantity sold, and total orders.
-
+- ﻿9,674.84﻿ cases per 100,000 people were confirmed between 01/06/2020 and 11/08/2023.
+- The case fatality rate, starting with 60% declined to 0.9% at the end of the period.
+- The total number of vaccines was the most in South America, while the total number of cases was the most in Europe per 100,000 population.
+- In Yemen, the case fatality rate was the highest among all countries with 18.1%.
+---
