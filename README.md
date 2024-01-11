@@ -43,7 +43,7 @@ The primary goal of this project is to create an interactive and informative Pow
 #### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
 
 #### Data Sources
-COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
+COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19, such as cases, deaths, and vaccinations.  
 #### Tools
 - Excel
 - SQL Server
@@ -79,9 +79,9 @@ ORDER BY Location, Date
 ```
 #### Results/Findings
 - ﻿9,674.84﻿ cases per 100,000 people were confirmed between 01/06/2020 and 11/08/2023.
-- The case fatality rate, starting with 60% declined to 0.9% at the end of the period.
+- The case fatality rate, starting with 60%, declined to 0.9% at the end of the period.
 - The total number of vaccines was the most in South America, while the total number of cases was the most in Europe per 100,000 population.
-- In Yemen, the case fatality rate was the highest among all countries with 18.1%.
+- The case fatality rate in Yemen was 18.1%, the highest among all countries.
 ---
 
 ## Personal Bank Statement Analysis 
@@ -89,7 +89,7 @@ ORDER BY Location, Date
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
+#### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Bank%20Statement%20Analysis.pbix)
 
 #### Data Sources
 The dataset used for this analysis has been obtained from personal bank account records.  
@@ -100,32 +100,14 @@ The dataset used for this analysis has been obtained from personal bank account 
 - SQL queries have been utilized to clean and preprocess the data. This involves filtering out irrelevant information, handling null values, and aggregating data to facilitate meaningful insights.
 
 #### Exploratory Data Analysis
-Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
+Exploratory Data Analysis has been performed to explore the bank statement data to answer the key questions, such as:
 - How are the spending distributed by category such as rent, groceries, transportation, etc?
-- How are the numbers distributed by continents?
-- Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
-#### Data Analysis
-As an example, the following SQL query has been implemented to determine the number of people vaccinated per 100,000 population: 
-```SQL
-WITH Vacc(Location, Date, Population, PeopleVaccinated)
-AS
-(SELECT dea.location,dea.date, dea.population, 
-	CASE
-		WHEN vac.people_vaccinated is null THEN max(vac.people_vaccinated) OVER (PARTITION BY dea.location order by dea.date) ELSE vac.people_vaccinated
-	END
-		AS people_vaccinated
-FROM PortfolioProject..CovidDeaths dea
-JOIN PortfolioProject..CovidVaccinations vac
-ON dea.location = vac.location
-AND dea.date = vac.date
-WHERE dea.continent is not null
-)
-SELECT *, 100000 * PeopleVaccinated/Population as VaccinatedPer100k
-FROM Vacc
-ORDER BY Location, Date
-```
+- What is the proportion of the payment methods used for the expenses?
+- How does the balance in the account change over the period?
+- In which months is the highest amount of money debited and credited? 
+
 #### Results/Findings
-- ﻿9,674.84﻿ cases per 100,000 people were confirmed between 01/06/2020 and 11/08/2023.
-- The case fatality rate, starting with 60% declined to 0.9% at the end of the period.
-- The total number of vaccines was the most in South America, while the total number of cases was the most in Europe per 100,000 population.
-- In Yemen, the case fatality rate was the highest among all countries with 18.1%.
+- ﻿The most considerable proportion of expenses are made through transfers from the account to other parties.
+- The highest amount of money is spent on Tuesday on average.
+- Total debited amount and total credited amount are highest in December and January, respectively.
+- Rent accounts for most of the total expenses over the period, at almost 34%.
