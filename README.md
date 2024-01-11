@@ -4,7 +4,7 @@
 ## Pizza Sales Analysis
 
 #### SQL Query: [Pizza Sales.sql](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.sql)
-#### PowerBI Dashboard [Pizza Sales.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.pbix)
+#### PowerBI Dashboard: [Pizza Sales.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Pizza%20Sales.pbix)
 
 #### Project Overview
 This project aims to create a comprehensive Power BI dashboard for analyzing pizza sales data over a year, leveraging SQL for data retrieval and transformation. The objective is to provide stakeholders with actionable insights into sales performance, product trends, and business dynamics. 
@@ -40,7 +40,7 @@ ORDER BY Perct_of_Sales DESC;
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
+#### PowerBI Dashboard: [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
 
 #### Data Sources
 COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19, such as cases, deaths, and vaccinations.  
@@ -89,7 +89,7 @@ ORDER BY Location, Date
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Bank%20Statement%20Analysis.pbix)
+#### PowerBI Dashboard: [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Bank%20Statement%20Analysis.pbix)
 
 #### Data Sources
 The dataset used for this analysis has been obtained from personal bank account records.  
