@@ -35,7 +35,7 @@ ORDER BY Perct_of_Sales DESC;
 - The Brie Carre Pizza has been at the bottom among other pizzas based on revenue, quantity sold, and total orders.
 
 ---
-## Personal Bank Statement Analysis
+## COVID-19 Analysis
 
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
@@ -45,6 +45,8 @@ The primary goal of this project is to create an interactive and informative Pow
 #### Data Sources
 COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
 #### Tools
+- Excel
+- SQL Server
 - Power BI
 #### Data Cleaning/Preparation
 - Excel has been employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
@@ -82,19 +84,16 @@ ORDER BY Location, Date
 - In Yemen, the case fatality rate was the highest among all countries with 18.1%.
 ---
 
-## COVID-19 Analysis
+## Personal Bank Statement Analysis 
 
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### SQL Query: [COVID19.sql](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.sql)
 #### PowerBI Dashboard [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
 
 #### Data Sources
-COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19 such as cases, deaths, and vaccinations.  
+The dataset used for this analysis has been obtained from personal bank account records.  
 #### Tools
-- Excel
-- SQL Server
 - Power BI
 #### Data Cleaning/Preparation
 - Excel has been employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
@@ -102,8 +101,8 @@ COVID-19 Data: The dataset used for this analysis has been obtained from the "(h
 
 #### Exploratory Data Analysis
 Exploratory Data Analysis has been performed to explore the COVID-19 data to answer the key questions, such as:
-- How did the case numbers, number of people vaccinated, and case fatality rate progress over time worldwide and for the countries?
-- How were the numbers distributed by continents?
+- How are the spending distributed by category such as rent, groceries, transportation, etc?
+- How are the numbers distributed by continents?
 - Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
 As an example, the following SQL query has been implemented to determine the number of people vaccinated per 100,000 population: 
