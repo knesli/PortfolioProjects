@@ -59,7 +59,7 @@ Exploratory Data Analysis has been performed to explore the COVID-19 data to ans
 - Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
 As an example, the following SQL query has been implemented to determine the number of people vaccinated per 100,000 population: 
-```SQL
+```python
 WITH Vacc(Location, Date, Population, PeopleVaccinated)
 AS
 (SELECT dea.location,dea.date, dea.population, 
