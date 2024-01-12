@@ -136,23 +136,13 @@ Exploratory Data Analysis has been performed to explore the COVID-19 data to ans
 - Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
 As an example, the following SQL query has been implemented to determine the number of people vaccinated per 100,000 population: 
-```SQL
-WITH Vacc(Location, Date, Population, PeopleVaccinated)
-AS
-(SELECT dea.location,dea.date, dea.population, 
-	CASE
-		WHEN vac.people_vaccinated is null THEN max(vac.people_vaccinated) OVER (PARTITION BY dea.location order by dea.date) ELSE vac.people_vaccinated
-	END
-		AS people_vaccinated
-FROM PortfolioProject..CovidDeaths dea
-JOIN PortfolioProject..CovidVaccinations vac
-ON dea.location = vac.location
-AND dea.date = vac.date
-WHERE dea.continent is not null
-)
-SELECT *, 100000 * PeopleVaccinated/Population as VaccinatedPer100k
-FROM Vacc
-ORDER BY Location, Date
+```
+#Looking at the distribution of the customer ratings
+sns.displot(df["Rating"], kde= True)
+plt.axvline(x = np.mean(df["Rating"]), c="red", ls = "--", label = "mean")
+plt.axvline(x = np.percentile(df["Rating"], 25), c="green", ls = "--", label = "25-75th percentile")
+plt.axvline(x = np.percentile(df["Rating"], 75), c="green", ls = "--")
+plt.legend()
 ```
 #### Results/Findings
 - ﻿9,674.84﻿ cases per 100,000 people were confirmed between 01/06/2020 and 11/08/2023.
