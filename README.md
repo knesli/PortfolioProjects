@@ -113,19 +113,18 @@ Exploratory Data Analysis has been performed to explore the bank statement data 
 - Rent accounts for most of the total expenses over the period, at almost 34%.
 
 ---
-## Supermarket Sales Analysis
+## Supermarket Sales - Exploratory Data Analysis
 
 #### Project Overview
 The primary goal of this project is to create an interactive and informative PowerBI dashboard using COVID-19 data, which encompasses information on cases, deaths, and vaccinations. SQL is used for data retrieval and extracting relevant information from the database. The project aims to provide a comprehensive view of the global and country-specific impact of the pandemic.
 
-#### PowerBI Dashboard: [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
+#### Supermarket Sales Analysis: [Supermarket Sales - Exploratory Data Analysis.ipynb](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
 
 #### Data Sources
-COVID-19 Data: The dataset used for this analysis has been obtained from the "(https://ourworldindata.org/coronavirus)" website, containing detailed information about COVID-19, such as cases, deaths, and vaccinations.  
+Supermarket Sales Data: The dataset used for this analysis is the [supermarket_sales.csv](https://github.com/knesli/PortfolioProjects/blob/main/supermarket_sales.csv) file, containing detailed information about the supermarket sales.  
+
 #### Tools
-- Excel
-- SQL Server
-- Power BI
+- Interactive Python Notebook
 #### Data Cleaning/Preparation
 - Excel has been employed to standardize data structures and ensure consistency for seamless integration with PowerBI.
 - SQL queries have been utilized to clean and preprocess the data. This involves filtering out irrelevant information, handling null values, and aggregating data to facilitate meaningful insights.
