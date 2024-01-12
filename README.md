@@ -89,7 +89,7 @@ ORDER BY Location, Date
 #### Project Overview
 This project involves a detailed examination of a yearly personal bank statement to gain insights into financial behaviors, track changes in the account balance over time, categorize expenses, and identify prevalent payment methods. The goal is to provide a comprehensive overview of personal financial patterns and trends through the PowerBI Dashboard.
 
-#### PowerBI Dashboard: [COVID19.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Bank%20Statement%20Analysis.pbix)
+#### PowerBI Dashboard: [Bank Statement Analysis.pbix](https://github.com/knesli/PortfolioProjects/blob/main/Bank%20Statement%20Analysis.pbix)
 
 #### Data Sources
 The dataset used for this analysis has been obtained from personal bank account records, including  transaction details, dates, amounts, etc.  
