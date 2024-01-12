@@ -135,14 +135,11 @@ Exploratory Data Analysis has been performed to explore the COVID-19 data to ans
 - How were the numbers distributed by continents?
 - Which countries were at the top based on case numbers, people vaccinated, and case fatality rate?
 #### Data Analysis
-As an example, the following SQL query has been implemented to determine the number of people vaccinated per 100,000 population: 
+As an example, the following code has been implemented to examine and compare the spending behaviors of non-member people on the product lines.
 ```
-#Looking at the distribution of the customer ratings
-sns.displot(df["Rating"], kde= True)
-plt.axvline(x = np.mean(df["Rating"]), c="red", ls = "--", label = "mean")
-plt.axvline(x = np.percentile(df["Rating"], 25), c="green", ls = "--", label = "25-75th percentile")
-plt.axvline(x = np.percentile(df["Rating"], 75), c="green", ls = "--")
-plt.legend()
+dt = df[df["Customer type"]== "Normal"]
+sns.boxplot(data=dt, x = df["Product line"],  y=df["Total"]).set(title = "Money Spent by Non-members for the Product Lines")
+plt.xticks(rotation=45)
 ```
 #### Results/Findings
 - ﻿9,674.84﻿ cases per 100,000 people were confirmed between 01/06/2020 and 11/08/2023.
