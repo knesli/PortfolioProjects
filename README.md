@@ -138,7 +138,7 @@ Exploratory Data Analysis has been performed to explore the COVID-19 data to ans
 As an example, the following code has been implemented to examine and compare the spending behaviors of non-member people on the product lines.
 ```
 dt = df[df["Customer type"]== "Normal"]
-sns.boxplot(data=dt, x = df["Product line"],  y=df["Total"]).set(title = "Money Spent by Non-members for the Product Lines")
+sns.boxplot(data=dt, x = df["Product line"],  y=df["Total"]).set(title = "Money Spent by Non-members on the Product Lines")
 plt.xticks(rotation=45)
 ```
 #### Results/Findings
