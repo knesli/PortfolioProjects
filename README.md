@@ -154,3 +154,37 @@ for i in ax.containers:
 - Gross income is distributed almost equally for male and female customers.
 - There is no obvious time trend in gross income. 
 - Home and lifestyle products have the most revenue on average, followed by sports and travel and health and beauty products.
+
+
+----
+## Customer Calls - Data Cleaning Project
+
+#### Project Overview
+The Customer Calls Data Cleaning Project aims to enhance the quality and consistency of the customer call dataset. The project leverages an Interactive Python Notebook to perform various data cleaning tasks, ensuring that the dataset is accurate, well-organized, and ready for further analysis.
+
+#### Customer Calls - Data Cleaning Project: [Customer Calls - Data Cleaning Project.ipynb]()
+
+#### Data Sources
+Customer Calls Data: The dataset used for this analysis is the [Customer Call List.xlsx]() file, containing detailed information about the customer calls.  
+
+#### Tools
+- Interactive Python Notebook
+
+#### Data Cleaning
+- Duplicate records and unused columns have been deleted.
+- Customers' names, last names, and phone numbers have been adjusted to have a common format for all of the records.
+- Customer records without a phone number have been deleted because these customers are not reachable by call.
+- The address column has been separated into Street Address, State, and Zip Code.
+- Values having different formats in the same columns have been addressed.
+- It is assumed that customer records that do not have a communication preference will be contacted.
+- Customers who don't prefer to be contacted have been deleted from the records.
+- Record indexes have been handled.
+
+As an example, the following code has been implemented to remove any characters that are not numbers in the Phone_Number column and to set them in a common format.
+```python
+df["Phone_Number"] = df["Phone_Number"].astype(str)
+df["Phone_Number"] = df["Phone_Number"].replace('[^0-9]',"",regex=True)
+df["Phone_Number"] = df["Phone_Number"].apply(lambda x: x[0:3] + "-" + x[3:6] + "-" + x[6:10])
+```
+
+  
