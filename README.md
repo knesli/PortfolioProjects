@@ -171,14 +171,13 @@ Customer Calls Data: The dataset used for this analysis is the [Customer Call Li
 - Interactive Python Notebook
 
 #### Data Cleaning
-- Duplicate records and unused columns have been deleted.
-- Customers' names, last names, and phone numbers have been adjusted to have a common format for all of the records.
+- Duplicate records and columns that do not contribute to the analysis have been deleted to streamline the dataset.
+- Customers' names, last names, and phone numbers have been standardized to ensure a consistent format across all records.
+- Records with missing communication preferences have been assumed to be contactable, and customers who explicitly do not prefer to be contacted have been deleted.
 - Customer records without a phone number have been deleted because these customers are not reachable by call.
-- The address column has been separated into Street Address, State, and Zip Code.
-- Values having different formats in the same columns have been addressed.
-- It is assumed that customer records that do not have a communication preference will be contacted.
-- Customers who don't prefer to be contacted have been deleted from the records.
-- Record indexes have been handled.
+- The address column has been separated into distinct components, including Street Address, State, and Zip Code, for improved clarity and analysis.
+- Values within the same columns with different formats have been standardized to maintain consistency.
+- Record indexes have been handled to ensure the dataset's integrity and facilitate efficient data retrieval.
 
 As an example, the following code has been implemented to remove any characters that are not numbers in the Phone_Number column and to set them in a common format.
 ```python
