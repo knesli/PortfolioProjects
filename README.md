@@ -118,7 +118,7 @@ Exploratory Data Analysis has been performed to explore the bank statement data 
 #### Project Overview
 The project aims to conduct an exploratory analysis of a supermarket's sales data to derive insights into product performance, revenue patterns, and customer behavior. Leveraging the Interactive Python Notebook, the analysis spans data cleaning, exploratory data analysis (EDA), and uncovering valuable information to guide strategic decision-making for the supermarket.
 
-#### Supermarket Sales Analysis: [Supermarket Sales - Exploratory Data Analysis.ipynb](https://github.com/knesli/PortfolioProjects/blob/main/COVID19.pbix)
+#### Supermarket Sales Analysis: [Supermarket Sales - Exploratory Data Analysis.ipynb](https://github.com/knesli/PortfolioProjects/blob/main/Supermarket%20Sales%20-%20Exploratory%20Data%20Analysis.ipynb)
 
 #### Data Sources
 Supermarket Sales Data: The dataset used for this analysis is the [supermarket_sales.csv](https://github.com/knesli/PortfolioProjects/blob/main/supermarket_sales.csv) file, containing detailed information about the supermarket sales.  
