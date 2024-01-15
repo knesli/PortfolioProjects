@@ -162,7 +162,7 @@ for i in ax.containers:
 #### Project Overview
 The Customer Calls Data Cleaning Project aims to enhance the quality and consistency of the customer call dataset. The project leverages an Interactive Python Notebook to perform various data cleaning tasks, ensuring that the dataset is accurate, well-organized, and ready for further analysis.
 
-#### Customer Calls - Data Cleaning Project: [Customer Calls - Data Cleaning Project.ipynb]()
+#### Customer Calls - Data Cleaning Project: [Customer Calls - Data Cleaning Project.ipynb](https://github.com/knesli/PortfolioProjects/blob/main/Customer%20Calls%20-%20Data%20Cleaning.ipynb)
 
 #### Data Sources
 Customer Calls Data: The dataset used for this analysis is the [Customer Call List.xlsx]() file, containing detailed information about the customer calls.  
