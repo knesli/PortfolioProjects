@@ -165,7 +165,7 @@ The Customer Calls Data Cleaning Project aims to enhance the quality and consist
 #### Customer Calls - Data Cleaning Project: [Customer Calls - Data Cleaning Project.ipynb](https://github.com/knesli/PortfolioProjects/blob/main/Customer%20Calls%20-%20Data%20Cleaning.ipynb)
 
 #### Data Sources
-Customer Calls Data: The dataset used for this analysis is the [Customer Call List.xlsx]() file, containing detailed information about the customer calls.  
+Customer Calls Data: The dataset used for this analysis is the [Customer Call List.xlsx](https://github.com/knesli/PortfolioProjects/blob/main/Customer%20Call%20List.xlsx) file, containing detailed information about the customer calls.  
 
 #### Tools
 - Interactive Python Notebook
