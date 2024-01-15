@@ -1,5 +1,16 @@
 # Portfolio Projects 
 
+## Table of Contents
+-[Pizza Sales Analysis](#pizza-sales-analysis)
+
+-[COVID-19 Analysis](#covid-19-analysis)
+
+-[Personal Bank Statement Analysis](#personal-bank-statement-analysis)
+
+-[Supermarket Sales - Exploratory Data Analysis](#supermarket-sales---exploratory-data-analysis)
+
+-[Customer Calls - Data Cleaning Project](#customer-calls---data-cleaning-project)
+
 ---
 ## Pizza Sales Analysis
 
